@@ -43,6 +43,12 @@ const products = [
         price: 799.99,
         image: "image/sofá.avif"
     },
+    {
+        id: 8,
+        name: "Lucas Gabriel Bachle",
+        price: 0.99,
+        image: "image/lucas.jpg"
+    },
 ];
 
 // Estado do carrinho
