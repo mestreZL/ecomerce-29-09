@@ -8,21 +8,34 @@
 }
 
 body {
-    background-color: #f8f9fa;
-    color: #333;
+    background-color: #000000;
+    color: #ffffff;
     line-height: 1.6;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #fff;
+    background-color: #000000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 100;
 }
+table{
+    margin: 0 auto;
+    width: 100%;
+    border-collapse: separate;
 
+}
+tr,td{
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: #150029af;
+}
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -34,11 +47,11 @@ header {
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #2c3e50;
+    color: #3e008f;
 }
 
 .logo span {
-    color: #3498db;
+    color: #ffffff;
 }
 
 nav ul {
@@ -52,25 +65,26 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #555;
+    color: #ffffff;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #3498db;
+    color: #0f1b24;
 }
 
 .cart-icon {
     position: relative;
     cursor: pointer;
+    color: #ffffff;
 }
 
 .cart-count {
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: #e74c3c;
+    background-color: #ff0000;
     color: white;
     border-radius: 50%;
     width: 18px;
@@ -83,10 +97,13 @@ nav ul li a:hover {
 
 /* Banner principal */
 .hero {
-    background-color: #3498db;
-    color: white;
+    background-image: url(https://i.pinimg.com/originals/a1/5c/90/a15c90c35cc074d00f58d93794403f11.gif);
+    color: rgb(163, 163, 163);
     padding: 4rem 2rem;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero h1 {
@@ -102,8 +119,8 @@ nav ul li a:hover {
 
 .btn {
     display: inline-block;
-    background-color: #fff;
-    color: #3498db;
+    background-color: #000000;
+    color: #ffffff;
     padding: 0.8rem 1.5rem;
     border-radius: 4px;
     text-decoration: none;
@@ -112,7 +129,8 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; 
+    color: #000000;
     transform: translateY(-2px);
 }
 
@@ -127,7 +145,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 .products-grid {
@@ -137,7 +155,7 @@ nav ul li a:hover {
 }
 
 .product-card {
-    background-color: white;
+    background-color: lightgray;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -205,6 +223,7 @@ nav ul li a:hover {
 
 .cart-sidebar.active {
     right: 0;
+    background-color: #000000;
 }
 
 .cart-header {
@@ -306,7 +325,7 @@ nav ul li a:hover {
 
 /* Rodapé */
 footer {
-    background-color: #2c3e50;
+    background-color: #260057;
     color: white;
     padding: 3rem 2rem;
     text-align: center;
@@ -346,6 +365,7 @@ footer {
 
     .cart-sidebar {
         width: 300px;
+        
     }
 
     .hero h1 {
@@ -356,3 +376,65 @@ footer {
         font-size: 1rem;
     }
 }
+
+ /*cadastro*/
+/* Cadastro - container principal */
+.cadastro-form {
+    background-color: #3e008f;
+    padding: 40px 30px;
+    margin: 60px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título */
+  .cadastro-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffffff;
+  }
+  
+  /* Formulário */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #0077cc;
+    outline: none;
+  }
+  
+  /* Botão de cadastro */
+  .cadastrar-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cadastrar-btn:hover {
+    background-color: #005fa3;
+  }

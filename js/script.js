@@ -3,51 +3,51 @@
 const products = [
     {
         id: 1,
-        name: "Cadeira de Escritório Minimalista",
-        price: 599.99,
-        image: "image/cadeira minimalista.avif"
+        name: "Mangá Demon Slayer vol. 1",
+        price: 36.90,
+        image: "image/kny1.webp"
     },
     {
         id: 2,
-        name: "Mesa de Centro Moderna",
-        price: 349.99,
-        image: "image/mesa.webp"
+        name: "Box Demon Slayer vols. 1 ao 23",
+        price: 806.50,
+        image: "image/knyBox.webp"
     },
     {
         id: 3,
-        name: "Luminária de Mesa Elegante",
-        price: 129.99,
-        image: "image/lampada.avif"
+        name: "Mangá Hanako-kun vol. 1",
+        price: 36.90,
+        image: "image/hanako1.jpg"
     },
     {
         id: 4,
-        name: "Vaso Decorativo Cerâmica",
-        price: 79.99,
-        image: "image/sofá 2.avif"
+        name: "Box Hanako-kun vols. 1 ao 22",
+        price: 351.90,
+        image: "image/HanakoBox.jpg"
     },
     {
         id: 5,
-        name: "Conjunto de Canetas Premium",
-        price: 45.99,
-        image: "image/caneta.avif"
+        name: "Mangá Tokyo Ghoul vol. 1",
+        price: 66.50,
+        image: "image/TG1.jpg"
     },
     {
         id: 6,
-        name: "Caderno de Notas Capa Dura",
-        price: 29.99,
-        image: "image/livro.avif"
+        name: "Box Tokyo Ghoul vols. 1 ao 14",
+        price: 380.00,
+        image: "image/TGbox.webp"
     },
     {
         id: 7,
-        name: "Sofá vintage",
-        price: 799.99,
-        image: "image/sofá.avif"
+        name: "Mangá Chainsaw Man vol. 1",
+        price: 42.90,
+        image: "image/Chainsaw1.webp"
     },
     {
         id: 8,
-        name: "Lucas Gabriel Bachle",
-        price: 0.99,
-        image: "image/lucas.jpg"
+        name: "LBox Chainsaw Man vols. 1 ao 11",
+        price: 360.00,
+        image: "image/ChainsawBox.webp"
     },
 ];
 
