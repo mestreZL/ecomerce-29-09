@@ -214,3 +214,79 @@ overlay.addEventListener('click', () => {
     cartSidebar.classList.remove('active');
     overlay.classList.remove('active');
 });
+
+// 1. Selecionar o campo CEP
+var campoCep = document.getElementById('cep');
+
+// 2. Adicionar evento 'blur' (quando o campo perde o foco)
+campoCep.addEventListener('blur', function () {
+    let valorCep = campoCep.value.replace(/\D/g, ''); // Remove caracteres não numéricos
+
+    if (valorCep.length !== 8) {
+        mudaBorda(1);
+        alert("CEP inválido. Digite 8 números.");
+        return;
+    }
+
+    fetch(`https://viacep.com.br/ws/${valorCep}/json/`)
+        .then(response => response.json())
+        .then(data => {
+            if (data.erro) {
+                mudaBorda(1);
+                alert("CEP não encontrado.");
+                return;
+            }
+
+            // Preencher os campos com os dados retornados
+            document.getElementById('logradouro').value = data.logradouro || '';
+            document.getElementById('bairro').value = data.bairro || '';
+            document.getElementById('cidade').value = data.localidade || '';
+            document.getElementById('estado').value = data.uf || ''; // Corrigido para "uf", que é o retorno certo
+            mudaBorda(0);
+        })
+        .catch(error => {
+            console.error("Erro ao buscar o CEP:", error);
+            mudaBorda(1);
+        });
+});
+
+// Função que muda a borda do campo de CEP
+function mudaBorda(erro) {
+    if (erro === 1) {
+        campoCep.style.border = '2px solid red';
+    } else {
+        campoCep.style.border = '2px solid green';
+    }
+}
+
+        function ConfirmarSenha() {
+            // Pega os valores dos campos
+            const senha = document.getElementById('senha').value;
+            const confirmarSenha = document.getElementById('confirmarsenha').value;
+        
+            // Verifica se são iguais
+            if (senha === confirmarSenha) {
+                alert("As senhas coincidem!");
+                return true; // Pode enviar o formulário
+            } else {
+                alert("As senhas não coincidem!");
+                return false; // Bloqueia envio do formulário
+            }
+        };
+        
+        function toggleSenha(id) {
+            const input = document.getElementById(id);
+            const container = input.nextElementSibling;
+            const olhoAberto = container.querySelector('.olho-aberto');
+            const olhoFechado = container.querySelector('.olho-fechado');
+        
+            if (input.type === "password") {
+                input.type = "text";
+                olhoAberto.style.display = "inline";
+                olhoFechado.style.display = "none";
+            } else {
+                input.type = "password";
+                olhoAberto.style.display = "none";
+                olhoFechado.style.display = "inline";
+            }
+        }

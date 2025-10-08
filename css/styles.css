@@ -438,3 +438,154 @@ footer {
   .cadastrar-btn:hover {
     background-color: #005fa3;
   }
+
+  .form-senha {
+    max-width: 400px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 0.8rem 2.5rem 0.8rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #af8aeb;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 1rem;
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #d87cff;
+    box-shadow: 0 0 10px rgba(175, 138, 235, 0.3);
+}
+
+.toggle-olho {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.toggle-olho .olho-aberto {
+    display: none; /* começa invisível */
+}
+
+button[type="submit"] {
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #af8aeb, #6b42d7);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #d87cff, #af8aeb);
+    transform: translateY(-2px);
+}
+
+/* Botão final de cadastro que estava faltando */
+.btn-cadastro {
+    width: 100%;
+    padding: 14px;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.btn-cadastro:hover {
+    background-color: #005fa3;
+}
+
+/* Seção do formulário de cadastro */
+.cadastro-section {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #3e008f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(175, 138, 235, 0.2);
+}
+
+.cadastro-section h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.cadastro-subtitle {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.cadastro-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.cadastro-form input[type="text"],
+.cadastro-form input[type="email"],
+.cadastro-form input[type="password"],
+.cadastro-form input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border: 1px solid #af8aeb;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cadastro-form input:focus {
+    border-color: #d87cff;
+    box-shadow: 0 0 10px rgba(175, 138, 235, 0.3);
+    outline: none;
+}
+
+/* Campo com botão de mostrar/ocultar senha */
+.input-container {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-container input {
+    padding-right: 40px;
+}
+
+.toggle-olho {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.toggle-olho .olho-aberto {
+    display: none;
+}
